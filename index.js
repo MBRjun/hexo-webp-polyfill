@@ -11,6 +11,7 @@ const POLYFILL_SCRIPT_PATH = path.join(ASSET_DIR, 'webp-hero/dist-cjs/polyfills.
 const WEBPHERO_SCRIPT_PATH = path.join(ASSET_DIR, 'webp-hero/dist-cjs/webp-hero.bundle.js');
 
 if (!webp_polyfill || !webp_polyfill.enable) {
+	hexo.log.warn(`[hexo-webp-polyfill] Plugin was already installed but not enabled.\nSee https://github.com/MBRjun/hexo-webp-polyfill for more information.`);
 	return;
 }
 
