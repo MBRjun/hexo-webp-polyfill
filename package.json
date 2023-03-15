@@ -1,0 +1,31 @@
+{
+  "name": "hexo-webp-polyfill",
+  "version": "1.0.0",
+  "description": "Hexo browser polyfill for the WebP image format.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MBRjun/hexo-webp-polyfill.git"
+  },
+  "homepage": "https://github.com/MBRjun/hexo-webp-polyfill",
+  "keywords": [
+    "hexo",
+    "plugin",
+    "polyfill",
+    "webp"
+  ],
+  "author": "MBRjun <mbrjun@foxmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "uglify-js": "^3.17.4",
+    "webp-hero": "^0.0.2"
+  },
+  "bugs": {
+    "url": "https://github.com/MBRjun/hexo-webp-polyfill/issues"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {}
+}
