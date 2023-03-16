@@ -1,7 +1,7 @@
 {
   "name": "hexo-webp-polyfill",
-  "version": "1.0.0",
-  "description": "Hexo browser polyfill for the WebP image format.",
+  "version": "1.0.1",
+  "description": "WebP image format browser polyfill for Hexo.",
   "main": "index.js",
   "repository": {
     "type": "git",
