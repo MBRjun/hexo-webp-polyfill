@@ -23,9 +23,7 @@ webp_polyfill:
 ## Features
 - ✅ Load [WebP](https://developers.google.com/speed/webp) image format in **Internet Explorer 9-11** and **IE-based browser**.
 - ⚖️ ``93 kiB`` Polyfiller JS after Gzip (**will not** load in modern browsers)
-    - ``340 kiB`` Polyfiller JS without compression 
 - ⚖️ ``303 B`` main JS after Brotli (**will** load in all browsers)
-    - ``431 B`` main JS after Gzip and ``715 B`` without compression
 - ⚠️ Doesn't yet support css ``background-image`` and ``picture`` elements([upstream](https://github.com/chase-moskal/webp-hero) issues).
 
 ## Special thanks to
