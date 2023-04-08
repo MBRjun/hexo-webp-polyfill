@@ -5,17 +5,25 @@ const fs = require('fs');
 const path = require('path');
 const uglifyjs = require("uglify-js");
 
-const { webp_polyfill } = hexo.config;
+const webp_polyfill = hexo.config.webp_polyfill;
 const ASSET_DIR = path.resolve(__dirname, '..');
 const POLYFILL_SCRIPT_PATH = path.join(ASSET_DIR, 'webp-hero/dist-cjs/polyfills.js');
 const WEBPHERO_SCRIPT_PATH = path.join(ASSET_DIR, 'webp-hero/dist-cjs/webp-hero.bundle.js');
 
-if (!webp_polyfill || !webp_polyfill.enable) {
+// Default Config
+hexo.config.webp_polyfill = Object.assign({
+	enable: false,
+	force: false,
+	minify: true,
+	html5: true
+}, hexo.config.webp_polyfill);
+
+if (!webp_polyfill.enable) {
 	hexo.log.warn(`[hexo-webp-polyfill] Plugin has already installed but not enabled.\nSee https://github.com/MBRjun/hexo-webp-polyfill for more information.`);
 	return;
 }
 
-// Minify & Copy Polyfiller JS
+// Minify & Copy JS
 hexo.extend.generator.register('webp-polyfill', function(locals) {
 	return {
 		path: '/assets/js/webp-polyfill.min.js',
@@ -26,5 +34,5 @@ hexo.extend.generator.register('webp-polyfill', function(locals) {
 	};
 });
 
-// Polyfill document
+// Polyfill Document
 hexo.extend.filter.register('after_generate', inject_assets(hexo));
