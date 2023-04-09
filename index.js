@@ -1,6 +1,6 @@
 'use strict';
 
-const { inject_assets } = require('./lib/webp-polyfill');
+const { inject_assets } = require('./lib/inject');
 const fs = require('fs');
 const path = require('path');
 const uglifyjs = require("uglify-js");
