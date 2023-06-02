@@ -1,3 +1,12 @@
+## v2.0.0-rc1
+- docs: update README.md
+- feat: add default config
+- feat: force load
+- feat: html4
+- feat: provide 'minify' option to minify JS
+- ci: dependabot
+- misc: rename lib 'webp-polyfill' to 'inject'
+
 ## v1.0.2
 - docs: update README.md
 - package: update keywords(tags)

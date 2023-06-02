@@ -1,6 +1,6 @@
 {
   "name": "hexo-webp-polyfill",
-  "version": "1.0.2",
+  "version": "v2.0.0-rc1",
   "description": "WebP image format browser polyfill for Hexo.",
   "main": "index.js",
   "repository": {
@@ -17,7 +17,7 @@
     "browser-polyfill",
     "decoder"
   ],
-  "author": "MBRjun <mbrjun@foxmail.com>",
+  "author": "MBRjun <neko@mbr.moe>",
   "license": "MIT",
   "dependencies": {
     "cheerio": "^1.0.0-rc.12",
