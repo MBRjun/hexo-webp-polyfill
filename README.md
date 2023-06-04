@@ -17,10 +17,10 @@ yarn add hexo-webp-polyfill
 - ⚙️ Enable the plugin by editing main ``_config.yml`` file:
 ```yaml
 webp_polyfill:
-	enable: true,
-	force: false,
-	minify: true,
-	html5: true
+  enable: true,
+  force: false,
+  minify: true,
+  html5: true
 ```
 
 ## Features
