@@ -1,3 +1,7 @@
+## v2.0.0-rc2
+- docs: update README.md
+- fix: minify loader
+
 ## v2.0.0-rc1
 - docs: update README.md
 - feat: add default config
