@@ -1,3 +1,7 @@
+## v2.0.0
+- docs: update README.md
+- fix: ReferenceError: hexo is not defined
+
 ## v2.0.0-rc2
 - docs: update README.md
 - fix: minify loader
