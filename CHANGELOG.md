@@ -1,3 +1,7 @@
+## v2.0.1
+- fix: force load bug
+- fix: ci not working
+
 ## v2.0.0
 - docs: update README.md
 - fix: ReferenceError: hexo is not defined
